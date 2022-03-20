@@ -1,4 +1,23 @@
 ---
 label: photo
 hide_body: false
-fields: []
+fields:
+- name: nouvelle_photo
+  type: file
+  config:
+    maxSize: 64
+  label: nouvelle photo
+- name: categorie_photo
+  type: text
+  config:
+    required: false
+  label: categorie photo
+- name: description_de_la_photo
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: description de la photo
